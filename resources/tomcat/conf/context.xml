@@ -58,7 +58,7 @@
                   maxWait="10000" 
                   minEvictableIdleTimeMillis="300000" 
                   minIdle="1" 
-                  maxIdle="5
+                  maxIdle="5"
                   name="MobileDBLogDataSourceRef" 
                   password="AAC0M" 
                   removeAbandoned="true" 
