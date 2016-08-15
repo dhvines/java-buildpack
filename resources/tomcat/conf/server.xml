@@ -27,6 +27,10 @@
                    enabled="${access.logging.enabled}"/>
             <Host name='localhost'>
                 <Listener className="com.gopivotal.cloudfoundry.tomcat.lifecycle.ApplicationStartupFailureDetectingLifecycleListener"/>
+                <Context path="" docBase="SKTRD">
+                    <!-- Default set of monitored resources -->
+                    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+               </Context>
             </Host>
         </Engine>
     </Service>
